@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-mysql-sequelize",
+  "version": "1.0.0",
+  "description": "Nodejs, MySQL with Sequelize",
+  "main": "server.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.jsx"
+  },
+  "keywords": [
+    "Nodejs",
+    "MySql2",
+    "Sequelize"
+  ],
+  "author": "Shaiye",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Nodejs, MySQL with Sequelize"
+  }
+}

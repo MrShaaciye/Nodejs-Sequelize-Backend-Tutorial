@@ -1,0 +1,63 @@
+set password for root@localhost='';
+Youtube link: https://www.youtube.com/watch?v=YNyGD4rakmc&list=PLkqiWyX-_Lov8qmMOVn4SEQwr9yOjNn3f
+Youtube link: https://www.youtube.com/watch?v=ta3QsxiNkEY&list=PLolI8AY2AS9YO1kf0i_ui5_sKtxZg-yiR&index=3
+
+documentation website = npmjs.com Search sequelize
+npm i bcrypt compression cors express moment mysql2 sequelize
+npm i nodemon --save-dev
+
+>>>>>>>>>>>>>>>
+where: {
+	published: true,
+},
+attributes: [`title`, [Sequelize.fn(`SUM`, sequelize.col(`id`)), `idSum`]],
+group: [`title`],
+order: [[`title`, `ASC`]],
+limit: 2,
+offset: 1,
+raw: true,
+
+>>>>>>>>>>>>>>>
+where: {
+	[Sequelize.Op.or]: [{ title: `Rest API` }, { title: `Java with MySQL` }],
+},
+
+>>>>>>>>>>>>>>>
+where: {
+	[Sequelize.Op.and]: [{ title: `Rest API`, description: `Tut#2 Description` }],
+},
+>>>>>>>>>>>>>>>
+where: { title: `Rest API`, description: `Tut#2 Description` },
+
+>>>>>>>>>>>>>>>
+where: {
+	id: {
+		[Sequelize.Op.gt]: 5,
+	},
+},
+>>>>>>>>>>>>>>>
+where: {
+	id: {
+		[Sequelize.Op.lt]: 5,
+	},
+},
+>>>>>>>>>>>>>>>
+where: {
+	id: {
+		[Sequelize.Op.and]: {
+			[Sequelize.Op.gt]: 2,
+			[Sequelize.Op.lt]: 6,
+		},
+	},
+},
+>>>>>>>>>>>>>>>
+where: {
+	published: {
+		[Sequelize.Op.eq]: false,
+	},
+},
+
+>>>>>>>>>>>>>>>
+where: sequelize.where(sequelize.fn(`char_length`, sequelize.col(`title`)), 14),
+
+
